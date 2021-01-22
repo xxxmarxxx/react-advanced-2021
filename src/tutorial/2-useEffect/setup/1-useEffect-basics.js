@@ -8,10 +8,14 @@ import React, { useState, useEffect } from "react";
 
 const UseEffectBasics = () => {
   const [value, setValue] = useState(0);
+
   useEffect(() => {
     console.log("call useEffect");
-    document.title = `New Massages(${value})`;
+    if (value >= 1) {
+      document.title = `New Massages(${value})`;
+    }
   });
+
   console.log("render component");
   return (
     <>
