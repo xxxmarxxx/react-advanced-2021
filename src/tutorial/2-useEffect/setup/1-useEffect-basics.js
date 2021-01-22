@@ -14,7 +14,11 @@ const UseEffectBasics = () => {
     if (value >= 1) {
       document.title = `New Massages(${value})`;
     }
-  });
+  },[value]);
+
+  useEffect(()=>{
+    console.log('hello world');
+  },[])
 
   console.log("render component");
   return (
