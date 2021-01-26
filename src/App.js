@@ -1,11 +1,13 @@
 import React from 'react'
-import Setup from './tutorial/1-useState/setup/1-error-example';
+import Setup from './tutorial//8-useContext/setup/1-context-api';
+// import Final from './tutorial/6-useReducer/final';
 
 
 function App() {
   return (
     <div className='container'>
       <Setup  />
+      {/* <Final /> */}
       
     </div>
   )
