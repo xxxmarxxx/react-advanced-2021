@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useCallback, useMemo } from "react";
 import { useFetch } from "../../9-custom-hooks/final/2-useFetch";
-// lesson 80/81/82/83 useMemo
+// lesson 80/81/82/83/84 useCallback - Fetch Example
 // ATTENTION!!!!!!!!!!
 // I SWITCHED TO PERMANENT DOMAIN
 const url = "https://course-api.com/javascript-store-products";
 const calculateMostExpensive = (data) => {
+  console.log('hello');
   return (
     data.reduce((total, item) => {
       const price = item.fields.price;
