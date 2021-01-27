@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react'
 import { useFetch } from '../../9-custom-hooks/final/2-useFetch'
-
+// lesson 80/81 React.memo
 // ATTENTION!!!!!!!!!!
 // I SWITCHED TO PERMANENT DOMAIN
 const url = 'https://course-api.com/javascript-store-products'
@@ -22,7 +22,10 @@ const Index = () => {
   )
 }
 
-const BigList = ({ products }) => {
+const BigList = React.memo(({ products }) => {
+  useEffect(()=>{
+    console.log('big list called');
+  })
   return (
     <section className='products'>
       {products.map((product) => {
@@ -30,9 +33,12 @@ const BigList = ({ products }) => {
       })}
     </section>
   )
-}
+})
 
 const SingleProduct = ({ fields }) => {
+  useEffect(()=>{
+    console.count('single item called');
+  })
   let { name, price } = fields
   price = price / 100
   const image = fields.image[0].url
