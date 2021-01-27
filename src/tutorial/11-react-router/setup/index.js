@@ -1,5 +1,5 @@
 import React from "react";
-// lesson 75/76/77/78/79
+// lesson 75/76/77/78/79  React Router - Url Params and Placeholder
 // react router
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // pages
