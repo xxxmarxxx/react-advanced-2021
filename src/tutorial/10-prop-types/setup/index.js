@@ -1,7 +1,7 @@
 import React from 'react'
 import Product from './Product'
 import { useFetch } from '../../9-custom-hooks/final/2-useFetch'
-
+// lesson 72 PropTypes - Setup
 // ATTENTION!!!!!!!!!!
 // I SWITCHED TO PERMANENT DOMAIN
 const url = 'https://course-api.com/react-prop-types-example'
