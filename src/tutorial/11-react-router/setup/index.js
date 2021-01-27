@@ -1,5 +1,5 @@
 import React from "react";
-// lesson 75/76
+// lesson 75/76/77
 // react router
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // pages
@@ -22,6 +22,9 @@ const ReactRouterSetup = () => {
       </Route>
       <Route path="/people">
         <People />
+      </Route>
+      <Route path="*">
+        <Error />
       </Route>
     </Router>
   );
