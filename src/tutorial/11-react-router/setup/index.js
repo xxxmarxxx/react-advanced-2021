@@ -1,5 +1,5 @@
 import React from "react";
-// lesson 75/76/77
+// lesson 75/76/77/78
 // react router
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // pages
@@ -14,19 +14,20 @@ import Navbar from "./Navbar";
 const ReactRouterSetup = () => {
   return (
     <Router>
+      <Navbar />
       <Switch>
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/about">
-        <About/>
-      </Route>
-      <Route path="/people">
-        <People />
-      </Route>
-      <Route path="*">
-        <Error />
-      </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/people">
+          <People />
+        </Route>
+        <Route path="*">
+          <Error />
+        </Route>
       </Switch>
     </Router>
   );
